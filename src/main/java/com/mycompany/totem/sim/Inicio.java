@@ -45,7 +45,9 @@ public class Inicio extends javax.swing.JFrame {
         telaInicial1 = new com.mycompany.totem.sim.TelaInicial();
         btIniciar = new javax.swing.JButton();
         pnInicio = new com.mycompany.totem.sim.TelaInicial();
+        btProximo = new javax.swing.JButton();
         pnAguarde = new com.mycompany.totem.sim.TelaAguarde();
+        pnSelecionarPagamento = new com.mycompany.totem.sim.SelecionarTipoDeCarga();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
         getContentPane().setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
@@ -57,8 +59,17 @@ public class Inicio extends javax.swing.JFrame {
             }
         });
         getContentPane().add(btIniciar, new org.netbeans.lib.awtextra.AbsoluteConstraints(10, 288, 101, -1));
-        getContentPane().add(pnInicio, new org.netbeans.lib.awtextra.AbsoluteConstraints(10, 10, -1, -1));
+        getContentPane().add(pnInicio, new org.netbeans.lib.awtextra.AbsoluteConstraints(10, 20, -1, -1));
+
+        btProximo.setText("próximo");
+        btProximo.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                btProximoActionPerformed(evt);
+            }
+        });
+        getContentPane().add(btProximo, new org.netbeans.lib.awtextra.AbsoluteConstraints(190, 220, -1, -1));
         getContentPane().add(pnAguarde, new org.netbeans.lib.awtextra.AbsoluteConstraints(30, 10, -1, -1));
+        getContentPane().add(pnSelecionarPagamento, new org.netbeans.lib.awtextra.AbsoluteConstraints(30, 10, -1, -1));
 
         pack();
     }// </editor-fold>//GEN-END:initComponents
@@ -68,6 +79,13 @@ public class Inicio extends javax.swing.JFrame {
         btIniciar.setVisible(false);
         pnAguarde.setVisible(true);
     }//GEN-LAST:event_btIniciarActionPerformed
+
+    private void btProximoActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btProximoActionPerformed
+        pnInicio.setVisible(false);
+        btIniciar.setVisible(false);
+        pnAguarde.setVisible(false);
+        pnSelecionarPagamento.setVisible(true);
+    }//GEN-LAST:event_btProximoActionPerformed
 
     /**
      * @param args the command line arguments
@@ -106,8 +124,10 @@ public class Inicio extends javax.swing.JFrame {
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
     private javax.swing.JButton btIniciar;
+    private javax.swing.JButton btProximo;
     private com.mycompany.totem.sim.TelaAguarde pnAguarde;
     private com.mycompany.totem.sim.TelaInicial pnInicio;
+    private com.mycompany.totem.sim.SelecionarTipoDeCarga pnSelecionarPagamento;
     private com.mycompany.totem.sim.TelaInicial telaInicial1;
     // End of variables declaration//GEN-END:variables
 }
