@@ -1,5 +1,6 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -7,21 +8,36 @@
     <link rel="stylesheet" href="estilos.css">
     <title>Insira seu bilhete</title>
 </head>
+
 <body>
-    <h1 class="bem-vindo">Bem-vindo!</h1>
+    <h1 class="alinhamento-centro">Bem-vindo!</h1>
 
-    <img src="https://d1yjjnpx0p53s8.cloudfront.net/styles/logo-thumbnail/s3/0019/6864/brand.gif?itok=TCzRhKSi"
-     alt="">
+    <div>
 
-     <p>Insira seu Bilhete Único para Iniciar</p>
+        <img src="https://d1yjjnpx0p53s8.cloudfront.net/styles/logo-thumbnail/s3/0019/6864/brand.gif?itok=TCzRhKSi"
+            alt="" class="alinhamento-imagem">
 
-     <button>voltar</button>
+        <p class="alinhamento-centro">Insira seu Bilhete Único para Iniciar</p>
 
-     <p>Cartões aceitos </p>
+        <p class="alinhamento-centro">Cartões aceitos </p>
 
-     <img src="https://seeklogo.net/wp-content/uploads/2013/06/visa-black-vector-logo-400x400.png" alt="" style="width: 110px; height: 110px;">
+        <img src="https://seeklogo.net/wp-content/uploads/2013/06/visa-black-vector-logo-400x400.png" alt=""
+            style="width: 110px; height: 110px;" class="alinhamento-imagem">
 
-     <img src="https://logodownload.org/wp-content/uploads/2014/07/mastercard-logo-7.png" alt="" style="width: 110px;">
-    
+        <img src="https://logodownload.org/wp-content/uploads/2014/07/mastercard-logo-7.png" alt=""
+            style="width: 110px;" class="alinhamento-imagem">
+
+    </div>
+
+    <button type="button" onclick="proximo()" class="alinhamento-imagem" style="margin-top: 10px;">Iniciar</button>
+
 </body>
+
 </html>
+<script>
+
+    function proximo() {
+        window.location = "tela-carregamento1.html"
+    }
+
+</script>
