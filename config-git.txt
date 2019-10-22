@@ -1,0 +1,4 @@
+$ git config --global user.name cohessel
+$ git config --global user.email larissahessel@outlook.com
+$ git commit -m "nome do commit" --amend
+$ git push --force
