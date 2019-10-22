@@ -15,7 +15,7 @@
     </div>
 
     <div>
-        <button type="button" onclick="">Cartão de Débito</button>
+        <button type="button" onclick="proximo()">Cartão de Débito</button>
     </div>
 
     <div>
@@ -28,5 +28,9 @@
     function cancelar() {
         alert('Operação não concluida');
         window.location = "index.html";
+    }
+
+    function proximo(){
+        window.location = "deseja-continuar.html"
     }
 </script>
