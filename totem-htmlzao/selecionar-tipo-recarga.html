@@ -13,29 +13,45 @@
     <h1>Selecione o tipo de recarga</h1>
 
     <div>
-        <button type="button" onclick="">Comum</button>
+        <button type="button" onclick="proximo()">Comum</button>
     </div>
 
     <div>
-        <button type="button" onclick="">Vale Transporte</button>
+        <button type="button" onclick="proximo()">Vale Transporte</button>
     </div>
 
     <div>
-        <button type="button" onclick="">Temporal</button>
+        <button type="button" onclick="proximo()">Temporal</button>
     </div>
 
     <div>
-        <button type="button" onclick="">Fidelidade (desabilitado)</button>
+        <button type="button" onclick="proximo()">Fidelidade (desabilitado)</button>
     </div>
 
     <div>
-        <button type="button" onclick="">Compra Web</button>
+        <button type="button" onclick="proximo()">Compra Web</button>
     </div>
 
     <div>
-            <button type="button" onclick="">Estudante</button>
+            <button type="button" onclick="proximo()">Estudante</button>
+        </div>
+
+        <div>
+            <button type="button" onclick="sair()">Sair</button>
+
         </div>
 
 </body>
 
 </html>
+<script>
+    function sair(){
+        window.location = "index.html";
+        alert('Operação encerrada');
+    }
+
+        function proximo(){
+            window.location = "selecionar-valor.html";
+        }
+    
+</script>

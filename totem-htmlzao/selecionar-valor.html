@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="pt">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Selecionar valor</title>
+</head>
+
+<body>
+
+    <div id="valor_desejado"></div>
+
+    <div>
+        <button type="button" onclick="inserir_nUm()">1</button>
+    </div>
+
+    <div>
+        <button type="button" onclick="inserir_nDois()">2</button>
+    </div>
+
+    <div>
+        <button type="button" onclick="inserir_nTres()">3</button>
+    </div>
+
+    <div>
+        <button type="button" onclick="inserir_nQuatro()">4</button>
+    </div>
+
+    <div>
+        <button type="button" onclick="inserir_nCinco()">5</button>
+    </div>
+
+    <div>
+        <button type="button" onclick="inserir_nZero()">0</button>
+    </div>
+
+    <div>
+        <button type="button" onclick="apagar_inserir()">apagar</button>
+    </div>
+
+    <div>
+        <button type="button" onclick="voltar()">voltar</button>
+    </div>
+
+</body>
+
+</html>
+<script>
+    function voltar() {
+        window.location = "selecionar-tipo-recarga.html";
+    }
+
+    function inserir_nUm() {
+
+        valor_desejado.innerHTML += "1";
+    }
+
+    function inserir_nDois() {
+
+        valor_desejado.innerHTML += "2";
+    }
+
+    function inserir_nTres() {
+
+        valor_desejado.innerHTML += "3";
+    }
+
+    function inserir_nQuatro() {
+
+        valor_desejado.innerHTML += "4";
+    }
+
+    function inserir_nCinco() {
+
+        valor_desejado.innerHTML += "5";
+    }
+
+    function inserir_nZero() {
+
+        valor_desejado.innerHTML += "0";
+    }
+
+    function apagar_inserir() {
+        valor_desejado.innerHTML = "";
+    }
+
+
+
+</script>
