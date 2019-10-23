@@ -14,7 +14,7 @@
   </div>  
 
     <div>
-        <p class="alinhamento-central">Aguarde</p>
+        <p class="alinhamento-central" id='frase'>Aguarde</p>
     </div>  
 
     <div>
@@ -29,6 +29,35 @@
 </body>
 </html>
 <script>
+
+    const frase = document.querySelector('#frase');
+
+    setTimeout(() => {
+        frase.innerHTML = 'Aguarde ';
+    }, 1000);
+
+
+    setTimeout(() => {
+        frase.innerHTML = 'Iniciando leitura do cartão.';
+    }, 2000);
+
+    setTimeout(() => {
+        frase.innerHTML = 'Iniciando comunicação com o servidor.';
+    }, 3000);
+
+    setTimeout(() => {
+        frase.innerHTML = 'Processando informações recebidas.';
+    }, 4000);
+
+    setTimeout(() => {
+        frase.innerHTML = 'Realizando requisições finais.';
+    }, 5000);
+
+
+    setTimeout(() => {
+        window.location = 'selecionar-tipo-recarga.html';
+    }, 5000);
+
     function proximo(){
         window.location = "selecionar-tipo-recarga.html"
     }

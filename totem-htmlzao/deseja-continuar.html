@@ -11,13 +11,13 @@
         <p>Verifique as informações e pressione confirmar</p>
     </div>
 
-    <div><p>Valor de carga: <span>valor_usuario.value</span></p></div>
+    <div><p>Valor de carga: <span id="valor_de_carga"></span></p></div>
 
     <div><p>Saldo atual: R$ <span id="saldo_atual">4.85</span></p></div>
 
     <div><p>Forma de pagamento: Cartão de crédito</p></div>
     
-    <div><p>Valor a pagar:<span id="valor_a_pagar">valor_usuario.value</span></p></div>
+    <div><p>Valor a pagar:<span id="valor_a_pagar"></span></p></div>
     
     <div><p>Saldo final: <span id="saldo_final"></span></span></p></div>
 
@@ -36,6 +36,8 @@
     function carregarValores(){
         valor_a_pagar_var = localStorage.getItem('valor_desejado');
         valor_a_pagar.innerHTML = valor_a_pagar_var
+        valor_de_carga.innerHTML = valor_a_pagar_var
+
 
         saldo_final.innerHTML = Number(valor_a_pagar_var) + Number(saldo_atual.innerHTML) 
     }
