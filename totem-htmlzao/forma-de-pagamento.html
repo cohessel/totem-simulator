@@ -11,11 +11,15 @@
 <body>
 
     <div>
-        <button type="button" onclick="">Dinheiros</button>
+        <button type="button" onclick="proximo()">Dinheiros</button>
     </div>
 
     <div>
         <button type="button" onclick="proximo()">Cartão de Débito</button>
+    </div>
+
+    <div> 
+        <button type="button" onclick="voltar()">Voltar</button>
     </div>
 
     <div>
@@ -32,5 +36,9 @@
 
     function proximo(){
         window.location = "deseja-continuar.html"
+    }
+
+    function voltar(){
+        window.location = "selecionar-valor.html"
     }
 </script>

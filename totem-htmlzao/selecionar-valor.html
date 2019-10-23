@@ -137,6 +137,8 @@
     }
 
     function proximo(){
+        let valor_desejado_var = Number(valor_desejado.innerHTML)
+        localStorage.setItem('valor_desejado',valor_desejado_var) 
         window.location = "forma-de-pagamento.html";
     }
 

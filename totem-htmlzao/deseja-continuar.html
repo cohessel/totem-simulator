@@ -6,18 +6,45 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Deseja continuar?</title>
 </head>
-<body>
+<body onload="carregarValores()">
     <div>
         <p>Verifique as informações e pressione confirmar</p>
     </div>
 
+    <div><p>Valor de carga: <span>valor_usuario.value</span></p></div>
+
+    <div><p>Saldo atual: R$ <span id="saldo_atual">4.85</span></p></div>
+
+    <div><p>Forma de pagamento: Cartão de crédito</p></div>
+    
+    <div><p>Valor a pagar:<span id="valor_a_pagar">valor_usuario.value</span></p></div>
+    
+    <div><p>Saldo final: <span id="saldo_final"></span></span></p></div>
+
+    <div>
+        <button type="button" onclick="cancelar()">cancelar</button>
+    </div>    
+
     <div>
         <button type="button" onclick="confirmar()">confirmar</button>
     </div>
+
+
 </body>
 </html>
 <script>
+    function carregarValores(){
+        valor_a_pagar_var = localStorage.getItem('valor_desejado');
+        valor_a_pagar.innerHTML = valor_a_pagar_var
+
+        saldo_final.innerHTML = Number(valor_a_pagar_var) + Number(saldo_atual.innerHTML) 
+    }
     function confirmar(){
         window.location = "deseja-continuar.html";
+    }
+
+    function cancelar() {
+        alert('Operação não concluida');
+        window.location = "index.html";
     }
 </script>
