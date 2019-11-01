@@ -11,49 +11,49 @@
 <body>
 
     <div id="valor_desejado"></div>
-
+    
     <div>
-        <button type="button" onclick="inserir_nUm()">1</button>
+        <button type="button" onclick="inserir()">1</button>
     </div>
 
     <div>
-        <button type="button" onclick="inserir_nDois()">2</button>
+        <button type="button" onclick="inserir()">2</button>
     </div>
 
     <div>
-        <button type="button" onclick="inserir_nTres()">3</button>
+        <button type="button" onclick="inserir()">3</button>
     </div>
 
     <div>
-        <button type="button" onclick="inserir_nQuatro()">4</button>
+        <button type="button" onclick="inserir()">4</button>
     </div>
 
     <div>
-        <button type="button" onclick="inserir_nCinco()">5</button>
+        <button type="button" onclick="inserir()">5</button>
     </div>
 
     <div>
-        <button type="button" onclick="inserir_nSeis()">6</button>
+        <button type="button" onclick="inserir()">6</button>
     </div>
 
     <div>
-        <button type="button" onclick="inserir_nSete()">7</button>
+        <button type="button" onclick="inserir()">7</button>
     </div>
 
     <div>
-        <button type="button" onclick="inserir_nOito()">8</button>
+        <button type="button" onclick="inserir()">8</button>
     </div>
 
     <div>
-        <button type="button" onclick="inserir_nNove()">9</button>
+        <button type="button" onclick="inserir()">9</button>
     </div>
 
     <div>
-        <button type="button" onclick="inserir_nZero()">0</button>
+        <button type="button" onclick="inserir()">0</button>
     </div>
 
     <div>
-        <button type="button" onclick="inserir_virgula()">,</button>
+        <button type="button" onclick="inserir()">,</button>
     </div>
 
     <div>
@@ -76,69 +76,18 @@
     function voltar() {
         window.location = "selecionar-tipo-recarga.html";
     }
-
-    function inserir_nUm() {
-
-        valor_desejado.innerHTML += "1";
-    }
-
-    function inserir_nDois() {
-
-        valor_desejado.innerHTML += "2";
-    }
-
-    function inserir_nTres() {
-
-        valor_desejado.innerHTML += "3";
-    }
-
-    function inserir_nQuatro() {
-
-        valor_desejado.innerHTML += "4";
-    }
-
-    function inserir_nCinco() {
-
-        valor_desejado.innerHTML += "5";
-    }
-
-    function inserir_nSeis() {
-
-        valor_desejado.innerHTML += "6";
-    }
-
-    function inserir_nSete() {
-
-        valor_desejado.innerHTML += "7";
-    }
-
-    function inserir_nOito() {
-
-        valor_desejado.innerHTML += "8";
-    }
-
-    function inserir_nNove() {
-
-        valor_desejado.innerHTML += "9";
-    }
-
-    function inserir_nZero() {
-
-        valor_desejado.innerHTML += "0";
-    }
-
-    function inserir_virgula() {
-
-        valor_desejado.innerHTML += ",";
+    
+    function inserir() {
+        valor_desejado.innerHTML += this.event.target.innerText;
     }
 
     function apagar_inserir() {
         valor_desejado.innerHTML = "";
     }
 
-    function proximo(){
+    function proximo() {
         let valor_desejado_var = Number(valor_desejado.innerHTML)
-        localStorage.setItem('valor_desejado',valor_desejado_var) 
+        localStorage.setItem('valor_desejado', valor_desejado_var)
         window.location = "forma-de-pagamento.html";
     }
 
