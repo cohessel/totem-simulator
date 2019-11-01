@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="pt">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+
+<body>
+
+    <div>
+        <p id="frase">AGUARDE...</p>
+    </div>
+
+
+    <div>
+        <p id="number">30</p>
+    </div>
+</body>
+
+</html>
+<script>
+    function timer() {
+
+        for (i = 0; i < 30; i++) {
+            setTimeout(() => {
+                number.innerHTML -= 1;
+            }, i * 1000);
+        }
+    }
+
+    setTimeout(() => {
+        frase.innerHTML = 'AGUARDE...';
+    }, 500);
+
+    setTimeout(() => {
+        frase.innerHTML = 'DIGITE SUA SENHA';
+    }, 1000);
+
+    setTimeout(() => {
+        frase.innerHTML = 'Aguarde...';
+    }, 4000);
+
+    setTimeout(() => {
+        frase.innerHTML = 'SOLICITANDO AUTORIZAÇÃO, AGUARDE';
+    }, 5000);
+
+    setTimeout(() => {
+        frase.innerHTML = 'RETIRE O CARTÃO DE DÉBITO';
+    }, 6000);
+
+
+    timer();
+</script>
