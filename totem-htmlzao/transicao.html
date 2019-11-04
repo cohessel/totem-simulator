@@ -27,7 +27,12 @@
         for (i = 0; i < 30; i++) {
             setTimeout(() => {
                 number.innerHTML -= 1;
-            }, i * 1000);
+
+                if (number.innerHTML == 0){
+
+                    window.location = "transicao-andamento.html";
+                }
+            },i * 1000);
         }
     }
 
@@ -50,7 +55,6 @@
     setTimeout(() => {
         frase.innerHTML = 'RETIRE O CARTÃO DE DÉBITO';
     }, 6000);
-
 
     timer();
 </script>
