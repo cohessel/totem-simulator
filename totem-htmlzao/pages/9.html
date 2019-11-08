@@ -14,28 +14,21 @@
 <body>
 
     <section class="totem-body">
-        <h1>Selecione forma de pagamento</h1>
+        <h1>Transação em andamento</h1>
 
-        <div class="payment-container">
-            <div class="item">Dinheiro</div>
-            <div class="item student">Débito</div>
-            <div class="item">QR Code</div>
+        <div class="validation-container">
+            <p>Validando informações com o emissor...</p>
+
+            <p class="alert">NÃO RETIRE SEU BILHETE ÚNICO</p>
         </div>
 
-        <button class="cancel btn-align">cancelar</button>
     </section>
+
 </body>
 
-</html>
 <script>
-   let selected = document.querySelector('.student')
-
-setTimeout(() =>{
-    selected.style.background = "#707070"
-    selected.style.color = "#C4C4C4"
-},2000)
-
-setTimeout(() =>{
-    window.location = "7.html"
-},3000)
+    setTimeout(() => {
+        window.location = "10.html"
+    }, 2000);
 </script>
+</html>

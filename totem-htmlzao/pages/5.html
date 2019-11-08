@@ -55,91 +55,11 @@
             <button class="confirm">confirmar</button>
         </div>
     </section>
-
-
-
-
-
-    <!-- 
-    <div id="valor_desejado"></div>
-    
-    <div>
-        <button type="button" onclick="inserir()">1</button>
-    </div>
-
-    <div>
-        <button type="button" onclick="inserir()">2</button>
-    </div>
-
-    <div>
-        <button type="button" onclick="inserir()">3</button>
-    </div>
-
-    <div>
-        <button type="button" onclick="inserir()">4</button>
-    </div>
-
-    <div>
-        <button type="button" onclick="inserir()">5</button>
-    </div>
-
-    <div>
-        <button type="button" onclick="inserir()">6</button>
-    </div>
-
-    <div>
-        <button type="button" onclick="inserir()">7</button>
-    </div>
-
-    <div>
-        <button type="button" onclick="inserir()">8</button>
-    </div>
-
-    <div>
-        <button type="button" onclick="inserir()">9</button>
-    </div>
-
-    <div>
-        <button type="button" onclick="inserir()">0</button>
-    </div>
-
-    <div>
-        <button type="button" onclick="inserir()">,</button>
-    </div>
-
-    <div>
-        <button type="button" onclick="apagar_inserir()">apagar</button>
-    </div>
-
-
-    <div>
-        <button type="button" onclick="proximo()">próximo</button>
-    </div>
-
-    <div>
-        <button type="button" onclick="voltar()">voltar</button>
-    </div> -->
-
 </body>
 
 </html>
 <script>
-    function voltar() {
-        window.location = "selecionar-tipo-recarga.html";
-    }
-
-    function inserir() {
-        valor_desejado.innerHTML += this.event.target.innerText;
-    }
-
-    function apagar_inserir() {
-        valor_desejado.innerHTML = "";
-    }
-
-    function proximo() {
-        let valor_desejado_var = Number(valor_desejado.innerHTML)
-        localStorage.setItem('valor_desejado', valor_desejado_var)
-        window.location = "forma-de-pagamento.html";
-    }
-
+ setTimeout(() =>{
+        window.location = "6.html"
+    },2000)
 </script>

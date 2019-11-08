@@ -18,48 +18,27 @@
         <p>Insira seu Bilhete Único para Iniciar</p>
 
         <div class="card-container">
-            <button>Iniciar</button>
+            <button class="btn">Iniciar</button>
 
             <div class="brand-container">
                 <p>Cartões aceitos:</p>
                 <img src="img/Mastercard-PNG-Images.png" alt="logo dos cartões visa e master" class="card-brand">
             </div>
         </div>
-
     </section>
-    
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 </body>
 
-</html>
 <script>
+    let btn = document.querySelector('.btn')
 
-    function proximo() {
-        window.location = "tela-carregamento1.html"
-    }
 
+    setTimeout(() => {
+        btn.classList.add('selected')
+    }, 2000);
+
+    setTimeout(() =>{
+        window.location = "pages/2.html"
+    }, 3000)
 </script>
+</html>

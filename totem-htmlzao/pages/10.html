@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="pt">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../css/style-reset.css">
+    <link rel="stylesheet" href="../css/style-all.css">
+    <link href="https://fonts.googleapis.com/css?family=Roboto:400,900&display=swap" rel="stylesheet">
+
+    <title>Aguarde</title>
+</head>
+
+<body>
+    <section class="totem-body">
+        <h1>Recarga realizada com sucesso</h1>
+
+        <div class="confirm-container"> 
+            <div class="pay-container">
+                <p>Valor anterior</p>
+                <p>R$ 4,85</p>
+            </div>
+
+            <div class="pay-container">
+                <p>Valor anterior</p>
+                <p>R$ 4,85</p>
+            </div>
+        </div>
+
+        <div class="print-container">
+            <p>Imprimir o recibo da recarga?</p>
+            <div class="btn-container">
+                <button class="confirm">sim</button>
+                <button class="cancel">não</button>
+            </div>
+        </div>
+
+        <p class="frase"></p>
+
+    </section>
+</body>
+
+<script>
+    let frase = document.querySelector('.frase')
+    let selected = document.querySelector('.confirm')
+
+    setTimeout(() => {
+        selected.style.background = "#105836"
+    }, 2000);
+
+    setTimeout(() => {
+        frase.innerText = "Imprimir o recibo de transição de débito..."
+        selected.style.background = "#C4C4C4"
+    }, 3000);
+
+    setTimeout(() => {
+        window.location = "11.html"
+    }, 5000);
+</script>
+
+</html>

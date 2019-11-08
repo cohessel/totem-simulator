@@ -14,19 +14,23 @@
 <body>
     <section class="totem-body">
         <h1>Deseja continuar?</h1>
-        <p>Verifique as informações e pressione confirmar</p>
+        <p class="subtitle">Verifique as informações e pressione confirmar</p>
 
-        <div>
-            <div>
-                <p>Valor da carga: <span>R$5,00</span></p>
-                <p>Forma de pagamento: <span>Cartão de débito</span></p>
+        <div class="information-container">
+            <div class="pay">
+
+                <p class="more">Valor da carga: <span>R$5,00</span></p>
+                <p class="normal">Forma de pagamento: <span>Cartão de débito</span></p>
+                <p>Valor à pagar: <span>R$ 5,00</span></p>
             </div>
 
-            <div>
-                <p>Saldo atual: <span>4,85</span></p>
+            <div class="total">
+                <p class="mb">Saldo atual: <span>4,85</span></p>
                 <p>Saldo final: <span>9,85</span></p>
             </div>
         </div>
+
+        <p class="wait"></p>
 
         <div class="btn-container">
             <button class="cancel">cancelar</button>
@@ -36,4 +40,22 @@
 
 </body>
 
+<script>
+    let frase = document.querySelector('.wait')
+    let selected = document.querySelector('.confirm')
+
+    setTimeout(() => {
+        selected.style.background = "#105836"
+    }, 2000);
+
+    setTimeout(() => {
+        frase.innerText = "Aguarde..."
+    }, 3000)
+
+    setTimeout(() => {
+        window.location = "8.html"
+    }, 5000);
+
+
+</script>
 </html>
