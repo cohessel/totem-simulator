@@ -3,35 +3,23 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="estilos.css">
+    <link rel="stylesheet" href="../css/style-reset.css">
+    <link rel="stylesheet" href="../css/style-all.css">
     <link href="https://fonts.googleapis.com/css?family=Roboto:400,900&display=swap" rel="stylesheet">
 
        <title>Aguarde</title>
 </head>
 <body>
+    <section class="totem-body loading">
+        <img src="../img/Rolling-1s-120px.gif" alt="git carregamento" class="img-loading">
 
-  <div>  
-      <img src="https://camo.githubusercontent.com/6ed028acbf67707d622344e0ef1bc3b098425b50/687474703a2f2f662e636c2e6c792f6974656d732f32473146315a304d306b306832553356317033392f535650726f67726573734855442e676966" alt="gif Aguarde" class="alinhamento-imagem">
-  </div>  
-
-    <div>
-        <p class="alinhamento-central" id='frase'>Aguarde</p>
-    </div>  
-
-    <div>
-            <button type="button" onclick="proximo()">Próximo</button>
-    </div>
-
-    <div>
-         <button type="button" onclick="sair()">sair</button>
-    </div>
-
-
+        <p class="frase">Aguarde</p>
+    </section>
 </body>
 </html>
 <script>
 
-    const frase = document.querySelector('#frase');
+    const frase = document.querySelector('.frase');
 
     setTimeout(() => {
         frase.innerHTML = 'Aguarde ';
