@@ -16,13 +16,15 @@
         <h1>Selecione cotas desejadas</h1>
         <div class="cotas-container">
             <div class="information">
-                <p class="value">R$ 5,00</p>
+                <p class="value">R$ </p>
                 <p>Valor máximo: R$243,00</p>
             </div>
 
             <div class="calculadora">
                 <div class="calc-container">
-                    <div class="display">5,00</div>
+                    <div class="display">
+                        <p class="number"></p>
+                    </div>
 
                     <div class="calc-row">
                         <div>1</div>
@@ -32,7 +34,7 @@
 
                     <div class="calc-row">
                         <div>4</div>
-                        <div>5</div>
+                        <div class="n5">5</div>
                         <div>6</div>
                     </div>
 
@@ -43,8 +45,8 @@
                     </div>
 
                     <div class="calc-row only">
-                        <div>0</div>
-                 
+                        <div class="n0">0</div>
+
                     </div>
                 </div>
             </div>
@@ -55,91 +57,58 @@
             <button class="confirm">confirmar</button>
         </div>
     </section>
-
-
-
-
-
-    <!-- 
-    <div id="valor_desejado"></div>
-    
-    <div>
-        <button type="button" onclick="inserir()">1</button>
-    </div>
-
-    <div>
-        <button type="button" onclick="inserir()">2</button>
-    </div>
-
-    <div>
-        <button type="button" onclick="inserir()">3</button>
-    </div>
-
-    <div>
-        <button type="button" onclick="inserir()">4</button>
-    </div>
-
-    <div>
-        <button type="button" onclick="inserir()">5</button>
-    </div>
-
-    <div>
-        <button type="button" onclick="inserir()">6</button>
-    </div>
-
-    <div>
-        <button type="button" onclick="inserir()">7</button>
-    </div>
-
-    <div>
-        <button type="button" onclick="inserir()">8</button>
-    </div>
-
-    <div>
-        <button type="button" onclick="inserir()">9</button>
-    </div>
-
-    <div>
-        <button type="button" onclick="inserir()">0</button>
-    </div>
-
-    <div>
-        <button type="button" onclick="inserir()">,</button>
-    </div>
-
-    <div>
-        <button type="button" onclick="apagar_inserir()">apagar</button>
-    </div>
-
-
-    <div>
-        <button type="button" onclick="proximo()">próximo</button>
-    </div>
-
-    <div>
-        <button type="button" onclick="voltar()">voltar</button>
-    </div> -->
-
 </body>
 
 </html>
 <script>
-    function voltar() {
-        window.location = "selecionar-tipo-recarga.html";
-    }
+    let display = document.querySelector('.number')
+    let n5 = document.querySelector('.n5')
+    let n0 = document.querySelector('.n0')
+    let value = document.querySelector('.value')
+    let selected = document.querySelector('.confirm')
 
-    function inserir() {
-        valor_desejado.innerHTML += this.event.target.innerText;
-    }
+    setTimeout(() => {
+        n5.style.background = "#707070"
+        n5.style.color = "#C4C4C4"
+        display.innerText = "5"
+        value.innerText += "5"
+    }, 2000)
 
-    function apagar_inserir() {
-        valor_desejado.innerHTML = "";
-    }
+    setTimeout(() => {
+        n5.style.background = "white"
+        n5.style.color = "black"
+    }, 3000)
 
-    function proximo() {
-        let valor_desejado_var = Number(valor_desejado.innerHTML)
-        localStorage.setItem('valor_desejado', valor_desejado_var)
-        window.location = "forma-de-pagamento.html";
-    }
+    setTimeout(() => {
+        n0.style.background = "#707070"
+        n0.style.color = "#C4C4C4"
+        display.innerText += ",0"
+        value.innerText += ",0"
 
+    }, 4000)
+
+    setTimeout(() => {
+        n0.style.background = "white"
+        n0.style.color = "black"
+    }, 5000)
+
+    setTimeout(() => {
+        n0.style.background = "#707070"
+        n0.style.color = "#C4C4C4"
+        display.innerText += "0"
+        value.innerText += "0"
+    }, 6000)
+
+    setTimeout(() => {
+        n0.style.background = "white"
+        n0.style.color = "black"
+    }, 7000)
+
+    setTimeout(() => {
+        selected.style.background = "#105836"
+    }, 8000);
+
+    setTimeout(() => {
+        window.location = "6.html"
+    }, 9000)
 </script>

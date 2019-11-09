@@ -22,37 +22,28 @@
     const frase = document.querySelector('.frase');
 
     setTimeout(() => {
-        frase.innerHTML = 'Aguarde ';
+        frase.innerHTML = 'Aguarde...';
     }, 1000);
 
 
     setTimeout(() => {
-        frase.innerHTML = 'Iniciando leitura do cartão.';
+        frase.innerHTML = 'Iniciando leitura do cartão';
     }, 2000);
 
     setTimeout(() => {
-        frase.innerHTML = 'Iniciando comunicação com o servidor.';
+        frase.innerHTML = 'Iniciando comunicação com o servidor';
     }, 3000);
 
     setTimeout(() => {
-        frase.innerHTML = 'Processando informações recebidas.';
+        frase.innerHTML = 'Processando informações recebidas';
     }, 4000);
 
     setTimeout(() => {
-        frase.innerHTML = 'Realizando requisições finais.';
+        frase.innerHTML = 'Realizando requisições finais';
     }, 5000);
 
 
     setTimeout(() => {
-        window.location = 'selecionar-tipo-recarga.html';
+        window.location = '3.html';
     }, 5000);
-
-    function proximo(){
-        window.location = "selecionar-tipo-recarga.html"
-    }
-
-    function sair(){
-        window.location= "index.html"
-        alert('Operação encerrada');
-    }
 </script>

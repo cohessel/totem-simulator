@@ -18,46 +18,24 @@
 
         <div class="payment-container">
             <div class="item">Dinheiro</div>
-            <div class="item">Débido</div>
+            <div class="item student">Débito</div>
             <div class="item">QR Code</div>
         </div>
 
         <button class="cancel btn-align">cancelar</button>
-
-
-
-
     </section>
-<!-- 
-    <div>
-        <button type="button" onclick="proximo()">Dinheiros</button>
-    </div>
-
-    <div>
-        <button type="button" onclick="proximo()">Cartão de Débito</button>
-    </div>
-
-    <div> 
-        <button type="button" onclick="voltar()">Voltar</button>
-    </div>
-
-    <div>
-        <button type="button" onclick="cancelar()">Cancelar</button>
-    </div> -->
 </body>
 
 </html>
 <script>
-    function cancelar() {
-        alert('Operação não concluida');
-        window.location = "index.html";
-    }
+   let selected = document.querySelector('.student')
 
-    function proximo(){
-        window.location = "deseja-continuar.html"
-    }
+setTimeout(() =>{
+    selected.style.background = "#707070"
+    selected.style.color = "#C4C4C4"
+},2000)
 
-    function voltar(){
-        window.location = "selecionar-valor.html"
-    }
+setTimeout(() =>{
+    window.location = "7.html"
+},3000)
 </script>
