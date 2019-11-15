@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="pt">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Selecione a forma de pagamento</title>
+    <link rel="stylesheet" href="../css/style-reset.css">
+    <link rel="stylesheet" href="../css/style-all.css">
+    <link href="https://fonts.googleapis.com/css?family=Roboto:400,900&display=swap" rel="stylesheet">
+</head>
+
+<body>
+
+    <section class="totem-body">
+        <h1>Selecione forma de pagamento</h1>
+
+        <div class="card-container nmt adp">
+            <div class="icon-container new error">
+                <img src="../img/money-error.png" alt="" class="icon">
+                <p>Dinheiro</p>
+            </div>
+            <div class="icon-container new student">
+                <img src="../img/credit-card (1).png" alt="" class="icon df-icon">
+                <p>Cartão de débito</p>
+            </div>
+        </div>
+
+        <button class="cancel btn-align">cancelar</button>
+    </section>
+</body>
+
+</html>
+<script>
+   let selected = document.querySelector('.student')
+
+setTimeout(() =>{
+    selected.style.background = "#07273f"
+},2000)
+
+setTimeout(() =>{
+    window.location = "7.html"
+},3000)
+</script>

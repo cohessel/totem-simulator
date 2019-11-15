@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="pt">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../css/style-reset.css">
+    <link rel="stylesheet" href="../css/style-all.css">
+    <link href="https://fonts.googleapis.com/css?family=Roboto:400,900&display=swap" rel="stylesheet">
+
+    <title>Selecione o tipo de recarga</title>
+</head>
+
+<body>
+    <section class="totem-body">
+        <h1>Selecione o tipo de recarga</h1>
+
+        <div class="payment-container">
+            <div class="item">
+                <p>Comum</p>
+            </div>
+
+            <div class="item">
+                <p>Vale Transporte</p>
+            </div>
+
+            <div class="item">
+                <p>Temporal</p>
+            </div>
+
+            <div class="item">
+                <p>Fidelidade</p>
+            </div>
+
+            <div class="item">
+                <p>Compra Web</p>
+            </div>
+
+            <div class="item student">
+                <p>Estudante</p>
+            </div>
+
+
+            <div class="status-credit">
+                <div class="type">Saldo Comum</div>
+                <div class="value">R$ 1,39</div>
+            </div>
+
+            <div class="status-credit">
+                <div class="type">Saldo VT</div>
+                <div class="value">R$ 0,00</div>
+            </div>
+
+            <div class="status-credit">
+                <div class="type">Saldo Estudante</div>
+                <div class="value">R$ 4,85</div>
+            </div>
+        </div>
+    </section>
+</body>
+
+</html>
+<script>
+    let selected = document.querySelector('.student')
+
+    setTimeout(() =>{
+        selected.style.background = "#707070"
+        selected.style.color = "#C4C4C4"
+    },2000)
+
+    setTimeout(() =>{
+        window.location = "4.html"
+    },3000)
+
+</script>

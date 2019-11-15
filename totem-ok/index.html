@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="pt">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="css/style-reset.css">
+    <link rel="stylesheet" href="css/style-all.css">
+    <link href="https://fonts.googleapis.com/css?family=Roboto:400,900&display=swap" rel="stylesheet">
+    <title>Totem</title>
+</head>
+
+<body>
+    <section class="totem-body">
+        <img src="img/118578764.png" alt="Logo do bilhete único" class="img-principal-brand">
+        <h2>Formas de pagamento:</h2>
+
+        <div class="card-container nmt">
+           <div class="icon-container">
+               <img src="img/correct-symbol.png" alt="" class="icon">
+               <img src="img/money.png" alt="" class="icon">
+           </div>
+           <div class="icon-container">
+               <img src="img/correct-symbol.png" alt="" class="icon">
+               <img src="img/credit-card (1).png" alt="" class="icon df-icon">
+           </div>
+        </div>
+    </section>
+
+</body>
+
+<script>
+    let btn = document.querySelector('.btn')
+
+    setTimeout(() => {
+        btn.classList.add('selected')
+    }, 2000);
+
+    setTimeout(() =>{
+        window.location = "pages/1-5.html"
+    }, 3000)
+</script>
+</html>

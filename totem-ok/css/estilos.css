@@ -1,0 +1,29 @@
+.flex  {
+    display: flex;
+}
+
+.item {
+	margin: 5px;
+	background: rgb(255, 184, 172);
+	text-align: center;
+	font-size: 1.5em;
+}
+
+.alinhamento-centro{
+    text-align: center;
+    }
+
+.alinhamento-imagem{
+    display: block;
+    margin-left: auto;
+    margin-right: auto
+}
+
+body {
+	font-family: sans-serif;
+    color: #333;
+    
+    font-family: 'Roboto', sans-serif;  
+    background-color: red;
+
+}

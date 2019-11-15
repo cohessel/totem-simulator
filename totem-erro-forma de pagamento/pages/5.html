@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="pt">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="../css/style-reset.css">
+    <link rel="stylesheet" href="../css/style-all.css">
+    <link href="https://fonts.googleapis.com/css?family=Roboto:400,900&display=swap" rel="stylesheet">
+    <title>Selecionar valor</title>
+</head>
+
+<body>
+    <section class="totem-body">
+        <h1>Selecione cotas desejadas</h1>
+        <div class="cotas-container">
+            <div class="information">
+                <p class="value">R$ </p>
+                <p>Valor máximo: R$243,00</p>
+            </div>
+
+            <div class="calculadora">
+                <div class="calc-container">
+                    <div class="display">
+                        <p class="number"></p>
+                    </div>
+
+                    <div class="calc-row">
+                        <div>1</div>
+                        <div>2</div>
+                        <div>3</div>
+                    </div>
+
+                    <div class="calc-row">
+                        <div>4</div>
+                        <div class="n5">5</div>
+                        <div>6</div>
+                    </div>
+
+                    <div class="calc-row">
+                        <div>7</div>
+                        <div>8</div>
+                        <div>9</div>
+                    </div>
+
+                    <div class="calc-row only">
+                        <div class="n0">0</div>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="btn-container">
+            <button class="cancel">cancelar</button>
+            <button class="confirm">confirmar</button>
+        </div>
+    </section>
+</body>
+
+</html>
+<script>
+    let display = document.querySelector('.number')
+    let n5 = document.querySelector('.n5')
+    let n0 = document.querySelector('.n0')
+    let value = document.querySelector('.value')
+    let selected = document.querySelector('.confirm')
+
+    setTimeout(() => {
+        n5.style.background = "#07273f"
+        display.innerText = "5"
+        value.innerText += "5"
+    }, 2000)
+
+    setTimeout(() => {
+        n5.style.background = "#228ad4"
+        n5.style.color = "white"
+    }, 3000)
+
+    setTimeout(() => {
+        n0.style.background = "#07273f"
+        display.innerText += ",0"
+        value.innerText += ",0"
+
+    }, 4000)
+
+    setTimeout(() => {
+        n0.style.background = "#228ad4"
+        n0.style.color = "white"
+    }, 5000)
+
+    setTimeout(() => {
+        n0.style.background = "#07273f"
+        display.innerText += "0"
+        value.innerText += "0"
+    }, 6000)
+
+    setTimeout(() => {
+        n0.style.background = "#228ad4"
+        n0.style.color = "white"
+    }, 7000)
+
+    setTimeout(() => {
+        selected.style.background = "#105836"
+    }, 8000);
+
+    setTimeout(() => {
+        window.location = "6.html"
+    }, 9000)
+</script>

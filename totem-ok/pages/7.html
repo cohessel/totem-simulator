@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="../css/style-reset.css">
+    <link rel="stylesheet" href="../css/style-all.css">
+    <link href="https://fonts.googleapis.com/css?family=Roboto:400,900&display=swap" rel="stylesheet">
+    <title>Document</title>
+</head>
+
+<body>
+    <section class="totem-body">
+        <h1>Deseja continuar?</h1>
+        <p class="subtitle">Verifique as informações e pressione confirmar</p>
+
+        <div class="information-container">
+            <div class="pay">
+
+                <p class="more">Valor da carga: <span>R$5,00</span></p>
+                <p class="normal">Forma de pagamento: <span>Cartão de débito</span></p>
+                <p>Valor à pagar: <span>R$ 5,00</span></p>
+            </div>
+
+            <div class="total">
+                <p class="mb">Saldo atual: <span>4,85</span></p>
+                <p>Saldo final: <span>9,85</span></p>
+            </div>
+        </div>
+
+        <p class="wait"></p>
+
+        <div class="btn-container">
+            <button class="cancel">cancelar</button>
+            <button class="confirm">confirmar</button>
+        </div>
+    </section>
+
+</body>
+
+<script>
+    let frase = document.querySelector('.wait')
+    let selected = document.querySelector('.confirm')
+
+    setTimeout(() => {
+        selected.style.background = "#105836"
+    }, 2000);
+
+    setTimeout(() => {
+        frase.innerText = "Aguarde..."
+    }, 3000)
+
+    setTimeout(() => {
+        window.location = "8.html"
+    }, 5000);
+
+
+</script>
+</html>
